@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dhanushree | Engineering Student Portfolio</title>
+  <meta name="description" content="Personal portfolio of Dhanushree, a 2nd-year engineering student (3rd semester) passionate about programming, technology, and building practical projects." />
+  <meta name="author" content="Dhanushree" />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- =========================================================
+       1. NAVIGATION BAR
+       ========================================================= -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo" aria-label="Dhanushree Portfolio Home">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Dhanushree</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#activities" class="nav-link">Activities</a></li>
+          <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Controls: Theme Toggle & Hamburger -->
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <span class="theme-icon light-icon" aria-hidden="true">☀️</span>
+          <span class="theme-icon dark-icon" aria-hidden="true">🌙</span>
+        </button>
+
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================
+         2. HERO / HOME SECTION
+         ========================================================= -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>2nd Year Engineering Student &bull; 3rd Semester</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="highlight-text">Dhanushree</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            2nd Year Engineering Student | 3rd Semester
+          </p>
+
+          <p class="hero-intro">
+            "I am an enthusiastic engineering student passionate about learning programming, technology, and developing useful projects."
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <!-- NOTE: Replace the placeholders below with your actual profile links -->
+            <a href="https://github.com/[your-username]" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub (Replace with your username)">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://linkedin.com/in/[your-username]" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn (Replace with your username)">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="#contact" class="social-link" title="Send an Email">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Student Illustration Card -->
+        <div class="hero-visual">
+          <div class="code-card">
+            <div class="code-card-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="file-name">student_profile.c</span>
+            </div>
+            <pre class="code-content"><code><span class="code-keyword">#include</span> <span class="code-string">&lt;stdio.h&gt;</span>
+
+<span class="code-keyword">struct</span> <span class="code-type">Student</span> {
+    <span class="code-type">char</span> name[] = <span class="code-string">"Dhanushree"</span>;
+    <span class="code-type">int</span>  year = <span class="code-number">2</span>;
+    <span class="code-type">int</span>  semester = <span class="code-number">3</span>;
+    <span class="code-type">char</span> passions[] = <span class="code-string">"Code, Tech &amp; Problem Solving"</span>;
+};
+
+<span class="code-type">void</span> <span class="code-func">main</span>() {
+    <span class="code-func">printf</span>(<span class="code-string">"Ready to learn &amp; build!\n"</span>);
+}</code></pre>
+            <div class="card-footer-badge">
+              <span>🚀 3rd Semester in progress</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         3. ABOUT ME SECTION
+         ========================================================= -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get To Know Me</span>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">A glimpse into who I am, my current academic journey, and what drives my curiosity.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-main-card">
+            <h3 class="about-greeting">Hello! I'm Dhanushree.</h3>
+            <p class="about-text">
+              I am currently a <strong>2nd-year engineering student in my 3rd semester</strong>. My journey in technology began with curiosity about how software and hardware work together behind the scenes, which quickly turned into an eager enthusiasm for programming and software development.
+            </p>
+            <p class="about-text">
+              At this stage of my college education, I am actively strengthening my fundamentals in <strong>core programming languages (C, Java, Python)</strong>, <strong>Data Structures</strong>, and <strong>logical problem-solving</strong>. Whether working on C programming projects, exploring embedded systems with Arduino, or building web interfaces, I enjoy turning theoretical knowledge into working code.
+            </p>
+            <p class="about-text">
+              I believe in learning by doing — experimenting with code, tackling bug fixes, and collaborating with fellow students on creative and practical projects.
+            </p>
+
+            <div class="about-highlights-grid">
+              <div class="highlight-item">
+                <div class="highlight-icon">🎓</div>
+                <div class="highlight-info">
+                  <h4>Academic Level</h4>
+                  <p>2nd Year &bull; 3rd Semester</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">💻</div>
+                <div class="highlight-info">
+                  <h4>Primary Focus</h4>
+                  <p>C, Java, Python &amp; Data Structures</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">🧩</div>
+                <div class="highlight-info">
+                  <h4>Interest Areas</h4>
+                  <p>Software Development &amp; Problem Solving</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon">🌱</div>
+                <div class="highlight-info">
+                  <h4>Philosophy</h4>
+                  <p>Continuous learning &amp; practical projects</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Academic Quick Facts Card -->
+          <div class="about-side-card">
+            <h3 class="side-card-title">Quick Student Facts</h3>
+            <ul class="facts-list">
+              <li>
+                <span class="fact-label">Status:</span>
+                <span class="fact-value">Undergraduate Engineering</span>
+              </li>
+              <li>
+                <span class="fact-label">Semester:</span>
+                <span class="fact-value">3rd Semester (2nd Year)</span>
+              </li>
+              <li>
+                <span class="fact-label">Branch:</span>
+                <span class="fact-value placeholder-tag" title="Update with your branch">[Your Branch Name]</span>
+              </li>
+              <li>
+                <span class="fact-label">Location:</span>
+                <span class="fact-value placeholder-tag" title="Update with your location">[City, State, India]</span>
+              </li>
+              <li>
+                <span class="fact-label">Current Goals:</span>
+                <span class="fact-value">Mastering Data Structures &amp; building projects</span>
+              </li>
+              <li>
+                <span class="fact-label">Open For:</span>
+                <span class="fact-value">Student collaborations, hackathons &amp; learning</span>
+              </li>
+            </ul>
+
+            <div class="side-card-quote">
+              <blockquote>
+                "Every complex algorithm begins with simple logic and curiosity."
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         4. EDUCATION SECTION
+         ========================================================= -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">My educational pathway and current undergraduate studies.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- 1. Current Engineering Degree -->
+          <div class="timeline-item current">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-badge current-badge">Currently Pursuing</span>
+                <span class="timeline-period">2nd Year &bull; 3rd Semester (Expected: <span class="placeholder-text">[202X]</span>)</span>
+              </div>
+              <h3 class="degree-title">Bachelor of Engineering / B.Tech</h3>
+              <h4 class="institution-name">
+                <span class="placeholder-tag" title="Replace with your college name">[Your College Name]</span>
+              </h4>
+              <p class="branch-info">
+                <strong>Branch / Department:</strong>
+                <span class="placeholder-tag" title="Replace with your engineering branch">[Your Engineering Branch, e.g., Computer Science / Information Science]</span>
+              </p>
+              <div class="education-meta">
+                <span class="meta-item">
+                  <strong>Current Standing:</strong> 3rd Semester
+                </span>
+                <span class="meta-item">
+                  <strong>CGPA / Percentage:</strong>
+                  <span class="placeholder-tag" title="Optional: Add your CGPA or leave as placeholder">[Current CGPA - Optional]</span>
+                </span>
+              </div>
+              <div class="coursework">
+                <span class="coursework-label">Relevant Coursework (Current &amp; Completed):</span>
+                <div class="course-tags">
+                  <span class="course-tag">Data Structures</span>
+                  <span class="course-tag">Object-Oriented Programming (OOP)</span>
+                  <span class="course-tag">C Programming</span>
+                  <span class="course-tag">Computer Organization</span>
+                  <span class="course-tag">Discrete Mathematics</span>
+                  <span class="course-tag">Engineering Mathematics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Pre-University / 12th Grade -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-badge">Completed</span>
+                <span class="timeline-period"><span class="placeholder-text">[Year of Passing: e.g. 2023]</span></span>
+              </div>
+              <h3 class="degree-title">Higher Secondary Education (12th Grade / Pre-University)</h3>
+              <h4 class="institution-name">
+                <span class="placeholder-tag" title="Replace with your 12th school / college name">[Your School / Junior College Name]</span>
+              </h4>
+              <p class="branch-info">
+                <strong>Stream / Board:</strong>
+                <span class="placeholder-tag" title="e.g. Science (PCMB / PCMC) & Board">[Science / Board Name]</span>
+              </p>
+              <div class="education-meta">
+                <span class="meta-item">
+                  <strong>Score / Percentage:</strong>
+                  <span class="placeholder-tag" title="Replace with your percentage / grade">[Percentage / Grade]</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Secondary School / 10th Grade -->
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="marker-dot"></span>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-badge">Completed</span>
+                <span class="timeline-period"><span class="placeholder-text">[Year of Passing: e.g. 2021]</span></span>
+              </div>
+              <h3 class="degree-title">Secondary School Certificate (10th Grade)</h3>
+              <h4 class="institution-name">
+                <span class="placeholder-tag" title="Replace with your 10th school name">[Your High School Name]</span>
+              </h4>
+              <p class="branch-info">
+                <strong>Board:</strong>
+                <span class="placeholder-tag" title="e.g. CBSE / ICSE / State Board">[Board Name]</span>
+              </p>
+              <div class="education-meta">
+                <span class="meta-item">
+                  <strong>Score / Percentage:</strong>
+                  <span class="placeholder-tag" title="Replace with your percentage / grade">[Percentage / Grade]</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="note-box">
+          <span class="note-icon">ℹ️</span>
+          <span>
+            <strong>Note for Dhanushree:</strong> All academic placeholders (marked in dashed brackets) can be easily filled in by opening <code>index.html</code> in any text editor.
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         5. SKILLS SECTION
+         ========================================================= -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Technical Toolkit</span>
+          <h2 class="section-title">Skills</h2>
+          <p class="section-subtitle">Technologies, programming languages, and core concepts I have learned and am continuously practicing.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Category 1: Programming Languages -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-icon">💻</span>
+              <h3 class="category-title">Programming Languages</h3>
+            </div>
+            <p class="category-desc">Core languages used for foundational programming, coursework, and problem solving.</p>
+            <div class="skills-pill-group">
+              <div class="skill-pill">
+                <div class="skill-pill-top">
+                  <span class="skill-name">C Programming</span>
+                  <span class="skill-level intermediate">Intermediate</span>
+                </div>
+                <p class="skill-detail">Pointers, memory allocation, struct, algorithms</p>
+              </div>
+              <div class="skill-pill">
+                <div class="skill-pill-top">
+                  <span class="skill-name">Java</span>
+                  <span class="skill-level beginner">Beginner-Intermediate</span>
+                </div>
+                <p class="skill-detail">OOP concepts, classes, inheritance, collections</p>
+              </div>
+              <div class="skill-pill">
+                <div class="skill-pill-top">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-level beginner">Beginner-Intermediate</span>
+                </div>
+                <p class="skill-detail">Data manipulation, scripting, basic algorithms</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Core Engineering Fundamentals -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-icon">🧠</span>
+              <h3 class="category-title">Core Fundamentals</h3>
+            </div>
+            <p class="category-desc">Theoretical and practical foundations of computer science and problem-solving.</p>
+            <div class="skills-pill-group">
+              <div class="skill-pill">
+                <div class="skill-pill-top">
+                  <span class="skill-name">Data Structures</span>
+                  <span class="skill-level current-focus">Current Focus</span>
+                </div>
+                <p class="skill-detail">Arrays, Linked Lists, Stacks, Queues, Trees</p>
+              </div>
+              <div class="skill-pill">
+                <div class="skill-pill-top">
+                  <span class="skill-name">Problem Solving</span>
+                  <span class="skill-level intermediate">Active Practice</span>
+                </div>
+                <p class="skill-detail">Algorithmic thinking, logical debugging, optimization</p>
+              </div>
+              <div class="skill-pill">
+                <div class="skill-pill-top">
+                  <span class="skill-name">Object-Oriented Programming</span>
+                  <span class="skill-level beginner">In Progress</span>
+                </div>
+                <p class="skill-detail">Encapsulation, Polymorphism, Abstraction</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Web Technologies -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-icon">🌐</span>
+              <h3 class="category-title">Web Technologies</h3>
+            </div>
+            <p class="category-desc">Technologies for structuring, designing, and adding interactivity to web pages.</p>
+            <div class="skills-pill-group">
+              <div class="skill-pill">
+                <div class="skill-pill-top">
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-level intermediate">Intermediate</span>
+                </div>
+                <p class="skill-detail">Semantic structure, modern elements, forms</p>
+              </div>
+              <div class="skill-pill">
+                <div class="skill-pill-top">
+                  <span class="skill-name">CSS3</span>
+                  <span class="skill-level intermediate">Intermediate</span>
+                </div>
+                <p class="skill-detail">Flexbox, CSS Grid, media queries, animations</p>
+              </div>
+              <div class="skill-pill">
+                <div class="skill-pill-top">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-level beginner">Beginner</span>
+                </div>
+                <p class="skill-detail">DOM manipulation, event listeners, basic logic</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Databases & Developer Tools -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <span class="category-icon">🛠️</span>
+              <h3 class="category-title">Database &amp; Tools</h3>
+            </div>
+            <p class="category-desc">Software, version control, and storage systems used in projects.</p>
+            <div class="skills-pill-group">
+              <div class="skill-pill">
+                <div class="skill-pill-top">
+                  <span class="skill-name">SQL / MySQL</span>
+                  <span class="skill-level beginner">Beginner</span>
+                </div>
+                <p class="skill-detail">Queries, table design, CRUD operations, joins</p>
+              </div>
+              <div class="skill-pill">
+                <div class="skill-pill-top">
+                  <span class="skill-name">Git &amp; GitHub</span>
+                  <span class="skill-level beginner">Beginner</span>
+                </div>
+                <p class="skill-detail">Commits, branching, repositories, version control</p>
+              </div>
+              <div class="skill-pill">
+                <div class="skill-pill-top">
+                  <span class="skill-name">VS Code / IDEs</span>
+                  <span class="skill-level intermediate">Proficient</span>
+                </div>
+                <p class="skill-detail">Code editing, debugging, GCC / Clang compilers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         6. PROJECTS SECTION
+         ========================================================= -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Hands-On Work</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">Curated projects developed through academic coursework, hardware labs, and self-learning.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: 2D Graphics Editor in C -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-badge">C Project</div>
+              <span class="project-icon">🎨</span>
+            </div>
+            <h3 class="project-title">2D Graphics Editor in C</h3>
+            <p class="project-desc">
+              An interactive 2D graphics application developed in C implementing fundamental computer graphics algorithms. Features interactive canvas rendering, drawing primitive shapes (lines, circles, rectangles), color filling, and geometric transformations.
+            </p>
+            <div class="project-highlights">
+              <strong>Key Learnings:</strong>
+              <ul>
+                <li>Implemented Line Generation &amp; Bresenham's algorithms</li>
+                <li>Managed frame buffer data and screen coordinate systems</li>
+                <li>Practiced modular design with header files in C</li>
+              </ul>
+            </div>
+            <div class="tech-tags">
+              <span class="tech-tag">C Language</span>
+              <span class="tech-tag">Computer Graphics</span>
+              <span class="tech-tag">Algorithms</span>
+              <span class="tech-tag">File I/O</span>
+            </div>
+            <div class="project-links">
+              <!-- Placeholder: Replace with actual GitHub repo link -->
+              <a href="https://github.com/[your-username]/2d-graphics-editor" target="_blank" rel="noopener noreferrer" class="btn btn-card-link">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>View on GitHub</span>
+                <span class="placeholder-hint">[Update link]</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: Line Editor in C -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-badge">Data Structures</div>
+              <span class="project-icon">📝</span>
+            </div>
+            <h3 class="project-title">Line Editor in C</h3>
+            <p class="project-desc">
+              A command-line text line editor program written in C utilizing dynamic data structures. Provides features such as inserting, deleting, modifying, searching, and viewing text lines stored in linked structures with persistent file saving.
+            </p>
+            <div class="project-highlights">
+              <strong>Key Learnings:</strong>
+              <ul>
+                <li>Implemented Doubly Linked Lists for fast line navigation</li>
+                <li>Mastered dynamic memory allocation (`malloc`, `free`)</li>
+                <li>Handled file input/output streams and error boundaries</li>
+              </ul>
+            </div>
+            <div class="tech-tags">
+              <span class="tech-tag">C Language</span>
+              <span class="tech-tag">Data Structures</span>
+              <span class="tech-tag">Linked Lists</span>
+              <span class="tech-tag">Pointers</span>
+            </div>
+            <div class="project-links">
+              <!-- Placeholder: Replace with actual GitHub repo link -->
+              <a href="https://github.com/[your-username]/line-editor-c" target="_blank" rel="noopener noreferrer" class="btn btn-card-link">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>View on GitHub</span>
+                <span class="placeholder-hint">[Update link]</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: Arduino Automatic Trash Can -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-badge">Embedded / IoT</div>
+              <span class="project-icon">🤖</span>
+            </div>
+            <h3 class="project-title">Arduino Automatic Trash Can</h3>
+            <p class="project-desc">
+              A smart, touchless waste disposal system built using an Arduino microcontroller, HC-SR04 ultrasonic sensor, and a servo motor. Automatically opens the lid when an object is detected within a designated distance threshold and closes smoothly after a delay.
+            </p>
+            <div class="project-highlights">
+              <strong>Key Learnings:</strong>
+              <ul>
+                <li>Wrote C++ embedded code for Arduino hardware</li>
+                <li>Interfaced ultrasonic distance sensor with pulse timing logic</li>
+                <li>PWM servo motor control for smooth opening and closing</li>
+              </ul>
+            </div>
+            <div class="tech-tags">
+              <span class="tech-tag">Arduino (C++)</span>
+              <span class="tech-tag">Ultrasonic Sensor</span>
+              <span class="tech-tag">Servo Motors</span>
+              <span class="tech-tag">Embedded Logic</span>
+            </div>
+            <div class="project-links">
+              <!-- Placeholder: Replace with actual GitHub repo link -->
+              <a href="https://github.com/[your-username]/arduino-automatic-trash-can" target="_blank" rel="noopener noreferrer" class="btn btn-card-link">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>View on GitHub</span>
+                <span class="placeholder-hint">[Update link]</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: Safe Ride Guardian -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-badge">Safety &amp; Tech</div>
+              <span class="project-icon">🛡️</span>
+            </div>
+            <h3 class="project-title">Safe Ride Guardian</h3>
+            <p class="project-desc">
+              A safety-focused assistive technology project conceptualized to detect potential hazards during two-wheeler and commuter rides. Monitors movement parameters, sudden impacts, or abnormal inclinations, designed to alert emergency contacts or guardians.
+            </p>
+            <div class="project-highlights">
+              <strong>Key Learnings:</strong>
+              <ul>
+                <li>Sensor data filtering and threshold detection algorithms</li>
+                <li>Designed alert dispatch mechanisms and notification logic</li>
+                <li>Focused on real-world engineering problem solving and safety</li>
+              </ul>
+            </div>
+            <div class="tech-tags">
+              <span class="tech-tag">Python / C</span>
+              <span class="tech-tag">Sensors</span>
+              <span class="tech-tag">Safety System</span>
+              <span class="tech-tag">Hardware Logic</span>
+            </div>
+            <div class="project-links">
+              <!-- Placeholder: Replace with actual GitHub repo link -->
+              <a href="https://github.com/[your-username]/safe-ride-guardian" target="_blank" rel="noopener noreferrer" class="btn btn-card-link">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>View on GitHub</span>
+                <span class="placeholder-hint">[Update link]</span>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Add project tip for student -->
+        <div class="project-add-tip">
+          <p>
+            💡 <em>Tip for Dhanushree: To add your next project, simply copy one of the <code>&lt;article class="project-card"&gt;</code> blocks inside <code>index.html</code> and update the title, description, and tags!</em>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         7. ACHIEVEMENTS & ACTIVITIES SECTION
+         ========================================================= -->
+    <section class="section activities-section" id="activities">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Beyond Academics</span>
+          <h2 class="section-title">Achievements &amp; Activities</h2>
+          <p class="section-subtitle">Extracurricular participations, workshops, coding challenges, and college events.</p>
+        </div>
+
+        <div class="activities-grid">
+          <!-- Category 1: Hackathons & Contests -->
+          <div class="activity-card">
+            <div class="activity-icon-wrap">
+              <span class="activity-icon">🏆</span>
+            </div>
+            <h3 class="activity-category-title">Hackathons &amp; Coding Contests</h3>
+            <p class="activity-desc">Participations in coding competitions and collegiate hackathons.</p>
+            <ul class="activity-items-list">
+              <li class="activity-item">
+                <span class="item-title placeholder-tag" title="Replace with your hackathon name">[Hackathon Name / College Tech Fest]</span>
+                <span class="item-date placeholder-text">[Year / Month]</span>
+                <p class="item-desc placeholder-text">[Brief description: e.g., Collaborated in a team of 4 to prototype an IoT solution within 24 hours.]</p>
+              </li>
+              <li class="activity-item">
+                <span class="item-title placeholder-tag" title="Replace with contest details">[Coding Contest / Competitive Programming]</span>
+                <span class="item-date placeholder-text">[Year / Platform]</span>
+                <p class="item-desc placeholder-text">[Brief description: e.g., Solved algorithmic problems in C and Java on platforms like HackerRank/LeetCode.]</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 2: Certifications & Courses -->
+          <div class="activity-card">
+            <div class="activity-icon-wrap">
+              <span class="activity-icon">📜</span>
+            </div>
+            <h3 class="activity-category-title">Certifications &amp; Learning</h3>
+            <p class="activity-desc">Technical courses and online certifications completed.</p>
+            <ul class="activity-items-list">
+              <li class="activity-item">
+                <span class="item-title placeholder-tag" title="Replace with your certification">[Course Name, e.g., Programming in C / Java Basics]</span>
+                <span class="item-date placeholder-text">[Provider: NPTEL / Coursera / Udemy]</span>
+                <p class="item-desc placeholder-text">[Brief description: Mastered foundational syntax, OOP concepts, and programming assignments.]</p>
+              </li>
+              <li class="activity-item">
+                <span class="item-title placeholder-tag" title="Replace with your certification">[Course Name, e.g., Introduction to Python &amp; Data Structures]</span>
+                <span class="item-date placeholder-text">[Provider / Year]</span>
+                <p class="item-desc placeholder-text">[Brief description: Learned core Python constructs and solved basic data structure exercises.]</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 3: Workshops & Seminars -->
+          <div class="activity-card">
+            <div class="activity-icon-wrap">
+              <span class="activity-icon">💡</span>
+            </div>
+            <h3 class="activity-category-title">Workshops &amp; Seminars</h3>
+            <p class="activity-desc">Hands-on bootcamps and technical guest lectures attended.</p>
+            <ul class="activity-items-list">
+              <li class="activity-item">
+                <span class="item-title placeholder-tag" title="Replace with workshop name">[Workshop Name, e.g., Hands-on Arduino &amp; IoT Workshop]</span>
+                <span class="item-date placeholder-text">[Organized by / Year]</span>
+                <p class="item-desc placeholder-text">[Brief description: Built sensor circuits, interfaced microcontrollers, and learned embedded coding.]</p>
+              </li>
+              <li class="activity-item">
+                <span class="item-title placeholder-tag" title="Replace with seminar name">[Technical Seminar / Tech Talk]</span>
+                <span class="item-date placeholder-text">[Topic / Year]</span>
+                <p class="item-desc placeholder-text">[Brief description: Attended interactive session on emerging software technologies and industry trends.]</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Category 4: College Activities & Clubs -->
+          <div class="activity-card">
+            <div class="activity-icon-wrap">
+              <span class="activity-icon">👥</span>
+            </div>
+            <h3 class="activity-category-title">Clubs &amp; College Activities</h3>
+            <p class="activity-desc">Student clubs, technical committees, and campus events.</p>
+            <ul class="activity-items-list">
+              <li class="activity-item">
+                <span class="item-title placeholder-tag" title="Replace with club name">[Technical Club / Coding Club Member]</span>
+                <span class="item-date placeholder-text">[2023 &ndash; Present]</span>
+                <p class="item-desc placeholder-text">[Brief description: Active member participating in peer coding circles, peer presentations, and event coordination.]</p>
+              </li>
+              <li class="activity-item">
+                <span class="item-title placeholder-tag" title="Replace with activity name">[College Fest / Department Event Volunteer]</span>
+                <span class="item-date placeholder-text">[Event Name / Year]</span>
+                <p class="item-desc placeholder-text">[Brief description: Assisted in organizing departmental technical quiz and student exhibitions.]</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         8. RESUME SECTION
+         ========================================================= -->
+    <section class="section resume-section" id="resume">
+      <div class="container">
+        <div class="resume-card">
+          <div class="resume-badge">Academic CV</div>
+          <h2 class="resume-title">Looking for My Full Resume?</h2>
+          <p class="resume-desc">
+            Download my student resume to view detailed semester marks, academic achievements, coursework, and technical skills formatted for internships and student opportunities.
+          </p>
+
+          <div class="resume-actions">
+            <!-- Link to local PDF placeholder -->
+            <a href="assets/Dhanushree_Resume.pdf" download="Dhanushree_Resume.pdf" class="btn btn-primary btn-large" id="resumeDownloadBtn">
+              <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
+                <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+              <span>Download Resume (PDF)</span>
+            </a>
+            <a href="#contact" class="btn btn-outline btn-large">
+              <span>Have a Question? Let's Talk</span>
+            </a>
+          </div>
+
+          <div class="resume-instructions">
+            <div class="instruction-box">
+              <span class="instruction-icon">📌</span>
+              <p>
+                <strong>How to update with your actual resume:</strong> Export your resume as a PDF file, name it <code>Dhanushree_Resume.pdf</code>, and drop it into the <code>assets/</code> folder. The download button will immediately serve your updated file!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         9. CONTACT SECTION
+         ========================================================= -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Reach Out</span>
+          <h2 class="section-title">Contact Me</h2>
+          <p class="section-subtitle">Feel free to connect with me for study collaborations, project ideas, or student opportunities!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info-col">
+            <h3 class="contact-info-title">Let's Connect</h3>
+            <p class="contact-info-text">
+              I am always happy to connect with fellow engineering students, developers, and mentors. You can reach out to me via email or through my professional profiles.
+            </p>
+
+            <div class="contact-cards-list">
+              <!-- Email Card with Copy Button -->
+              <div class="contact-card">
+                <div class="contact-card-icon">✉️</div>
+                <div class="contact-card-content">
+                  <span class="contact-card-label">Email Address</span>
+                  <div class="contact-value-row">
+                    <!-- Placeholder: Replace with actual email -->
+                    <a href="mailto:dhanushree.student@example.com" id="emailText" class="contact-card-link placeholder-tag" title="Replace with your actual email">
+                      dhanushree.student@example.com
+                    </a>
+                    <button type="button" id="copyEmailBtn" class="copy-btn" title="Copy email address" aria-label="Copy email address">
+                      <span id="copyIcon">📋</span>
+                      <span id="copyText">Copy</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- GitHub Card -->
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-card-label">GitHub Profile</span>
+                  <a href="https://github.com/[your-username]" target="_blank" rel="noopener noreferrer" class="contact-card-link placeholder-tag" title="Replace with your GitHub profile">
+                    github.com/[your-username]
+                  </a>
+                </div>
+              </div>
+
+              <!-- LinkedIn Card -->
+              <div class="contact-card">
+                <div class="contact-card-icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </div>
+                <div class="contact-card-content">
+                  <span class="contact-card-label">LinkedIn Profile</span>
+                  <a href="https://linkedin.com/in/[your-username]" target="_blank" rel="noopener noreferrer" class="contact-card-link placeholder-tag" title="Replace with your LinkedIn profile">
+                    linkedin.com/in/[your-username]
+                  </a>
+                </div>
+              </div>
+
+              <!-- Location Card -->
+              <div class="contact-card">
+                <div class="contact-card-icon">📍</div>
+                <div class="contact-card-content">
+                  <span class="contact-card-label">Location</span>
+                  <span class="contact-card-text placeholder-tag" title="Replace with your city and state">[City, State, India]</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Message Form -->
+          <div class="contact-form-col">
+            <div class="form-container">
+              <h3 class="form-title">Send a Quick Message</h3>
+              <p class="form-subtitle">Have a project idea, question, or just want to say hi? Drop me a note below.</p>
+
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="name" class="form-label">Your Name <span class="required">*</span></label>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Ananya Sharma" required />
+                  <span class="form-error" id="nameError">Please enter your name.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">Your Email <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="e.g. ananya@example.com" required />
+                  <span class="form-error" id="emailError">Please enter a valid email address.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject" class="form-label">Subject <span class="required">*</span></label>
+                  <input type="text" id="subject" name="subject" class="form-input" placeholder="e.g. Student Project Collaboration" required />
+                  <span class="form-error" id="subjectError">Please enter a subject.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="message" class="form-label">Message <span class="required">*</span></label>
+                  <textarea id="message" name="message" rows="4" class="form-textarea" placeholder="Write your message here..." required></textarea>
+                  <span class="form-error" id="messageError">Please enter your message.</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                  <span>Send Message</span>
+                  <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18">
+                    <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
+                  </svg>
+                </button>
+
+                <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       10. FOOTER
+       ========================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-name">Dhanushree</span>
+          <p class="footer-tagline">2nd Year Engineering Student &bull; 3rd Semester</p>
+        </div>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#activities">Activities</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; <span id="currentYear"></span> Dhanushree. Built with HTML, CSS &amp; JavaScript.
+        </p>
+        <p class="footer-note">
+          Designed for learning, growth, and engineering passion.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Scroll to top" title="Back to top">
+    <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20">
+      <path fill-rule="evenodd" d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd" />
+    </svg>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
