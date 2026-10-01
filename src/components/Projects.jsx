@@ -15,7 +15,7 @@ const projects = [
       'Supports adding, deleting, modifying, and displaying objects',
     ],
     technologies: ['C'],
-    githubUrl: 'https://github.com/Dhanushree12340',
+    githubUrl: 'https://github.com/Dhanushree12340/2D-Graphics-Editor',
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const projects = [
       'Structured buffer management written in C',
     ],
     technologies: ['C'],
-    githubUrl: 'https://github.com/Dhanushree12340',
+    githubUrl: 'https://github.com/Dhanushree12340/Simple-Line-Editor-C',
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const projects = [
       'Hosted and organized on GitHub for continuous practice',
     ],
     technologies: ['C', 'Git', 'GitHub'],
-    githubUrl: 'https://github.com/Dhanushree12340',
+    githubUrl: 'https://github.com/Dhanushree12340/leetcode-solutions',
   },
 ];
 
