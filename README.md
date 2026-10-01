@@ -2,6 +2,8 @@
 
 A clean, modern, and responsive personal portfolio website built with **React 19**, **Vite**, **Tailwind CSS**, and **Lucide React**.
 
+🔗 **Live Website:** [https://my-portfolio-one-bice-81.vercel.app](https://my-portfolio-one-bice-81.vercel.app)
+
 ---
 
 ## 👤 Personal Information
@@ -9,6 +11,7 @@ A clean, modern, and responsive personal portfolio website built with **React 19
 - **Name:** Dhanushree A R
 - **Title:** 2nd Year Engineering Student | C Programmer | Web Development Learner
 - **Education:** Engineering — 2nd Year, 3rd Semester
+- **Portfolio Live URL:** [https://my-portfolio-one-bice-81.vercel.app](https://my-portfolio-one-bice-81.vercel.app)
 - **GitHub:** [github.com/Dhanushree12340](https://github.com/Dhanushree12340)
 - **LinkedIn:** [linkedin.com/in/dhanushree-gowda-7ba149410](https://www.linkedin.com/in/dhanushree-gowda-7ba149410/)
 - **Email:** [ugcet2502718@reva.edu.in](mailto:ugcet2502718@reva.edu.in)
@@ -69,6 +72,7 @@ dhanushree-portfolio/
 │   ├── App.jsx             # Main application container
 │   ├── main.jsx            # React 19 root entry
 │   └── index.css           # Tailwind CSS directives & global typography
+├── vercel.json             # Vercel SPA routing rewrites
 ├── index.html              # Vite entry HTML
 ├── package.json
 ├── tailwind.config.js
